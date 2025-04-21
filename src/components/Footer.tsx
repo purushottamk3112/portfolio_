@@ -102,7 +102,7 @@ const Footer = () => {
           variants={itemVariants}
           className="pt-8 mt-8 border-t border-gray-200 dark:border-gray-800 text-center text-gray-500 dark:text-gray-400 text-sm"
         >
-          <p>© {currentYear} Han Main hi owner hu❤️. All rights reserved.</p>
+          <p>© {currentYear} Spreading Love❤️. All rights reserved.</p>
         </motion.div>
       </div>
     </motion.footer>
