@@ -125,7 +125,7 @@ const About = () => {
                   <li className="flex items-center text-gray-600 dark:text-gray-300">
                     <Mail className="h-5 w-5 mr-3 text-purple-600 dark:text-purple-400" />
                     <a href="mailto:contact@example.com" className="hover:text-purple-600 dark:hover:text-purple-400">
-                      contact@example.com
+                      purushottamkumar3112@gmail.com
                     </a>
                   </li>
                   <li className="flex items-center text-gray-600 dark:text-gray-300">
