@@ -105,7 +105,7 @@ const About = () => {
             >
               <div className="relative overflow-hidden rounded-xl shadow-xl w-full max-w-md mx-auto lg:mx-0">
                 <img
-                  src="https://i.postimg.cc/52M0Dynz/IMG-20220526-213205-1.jpg"
+                  src="https://i.postimg.cc/V6YvC8jg/fnd.avif"
                   alt="Purushottam Kumar"
                   className="w-full h-auto"
                 />
