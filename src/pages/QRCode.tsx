@@ -65,7 +65,7 @@ END:VCARD`;
                 level="H"
                 includeMargin={true}
                 imageSettings={{
-                  src: "https://postimg.cc/wySqVZ2Q",
+                  src: "https://i.postimg.cc/QCMFXrWw/fnd.avif",
                   x: undefined,
                   y: undefined,
                   height: 80,
