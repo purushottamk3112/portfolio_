@@ -135,7 +135,7 @@ const About = () => {
                 </ul>
                 <div className="mt-6">
                   <a
-                    href="#"
+                    href="https://drive.google.com/file/d/1Fss2J6W03n5gueCkQw7fpHraawSk8UHD/view?usp=drive_link"
                     className="inline-flex items-center px-4 py-2 rounded-full bg-purple-600 hover:bg-purple-700 text-white font-medium text-sm transition-colors"
                   >
                     <Download className="h-4 w-4 mr-2" />
