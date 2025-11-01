@@ -12,6 +12,7 @@ import {
 } from 'lucide-react';
 import { motion } from 'framer-motion';
 import AnimatedSection from '../components/AnimatedSection';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -30,21 +31,27 @@ const Contact = () => {
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1500));
-
-    setIsSubmitting(false);
-    setIsSubmitted(true);
-    setFormData({ name: '', email: '', subject: '', message: '' });
-
-    // Reset success message after 5 seconds
-    setTimeout(() => {
-      setIsSubmitted(false);
-    }, 5000);
+    emailjs
+      .send(
+        'service_df22cuh',      // ← EmailJS Service ID
+        'template_dryzce4',      // ← EmailJS Template ID
+        formData,                 // {name, email, subject, message}
+        'F_GUTWfd7BsQ_1ytf'       // ← EmailJS Public Key
+      )
+      .then(() => {
+        setIsSubmitted(true);
+        setFormData({ name: '', email: '', subject: '', message: '' });
+        setTimeout(() => setIsSubmitted(false), 5000);
+      })
+      .catch((err) => {
+        console.error(err);
+        alert('Sorry, the message could not be sent. Try again.');
+      })
+      .finally(() => setIsSubmitting(false));
   };
 
   const contactInfo = [
@@ -87,7 +94,7 @@ const Contact = () => {
               transition={{ duration: 0.6, delay: 0.1 }}
               className="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto"
             >
-              Have a project in mind or want to collaborate? I'd love to hear
+              Have a project in mind or want to collaborate? I&apos;d love to hear
               from you!
             </motion.p>
           </div>
@@ -110,7 +117,7 @@ const Contact = () => {
                   Contact Information
                 </h2>
                 <p className="text-gray-600 dark:text-gray-400 mb-8">
-                  Feel free to reach out through any of the channels below. I'll
+                  Feel free to reach out through any of the channels below. I&apos;ll
                   get back to you as soon as possible.
                 </p>
 
@@ -144,7 +151,7 @@ const Contact = () => {
                     Current Availability
                   </h3>
                   <p className="text-gray-600 dark:text-gray-400">
-                    I'm currently available for freelance work and
+                    I&apos;m currently available for freelance work and
                     collaborations. My typical response time is within 24 hours.
                   </p>
                 </div>
@@ -173,7 +180,7 @@ const Contact = () => {
                         Message Sent Successfully!
                       </h3>
                       <p className="text-gray-600 dark:text-gray-400">
-                        Thank you for reaching out. I'll get back to you as soon
+                        Thank you for reaching out. I&apos;ll get back to you as soon
                         as possible.
                       </p>
                     </motion.div>
