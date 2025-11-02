@@ -31,7 +31,7 @@ const Projects = () => {
       technologies: ['Node Js', 'Express', 'NeonDb', 'React'],
       demoUrl: 'https://www.jotform.com/app/253054668860464',
       githubUrl: 'https://github.com/purushottamk3112/moodv',
-      category: 'SaaS',
+      category: 'Web Development',
     },
     {
       id: 3,
