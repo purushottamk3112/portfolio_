@@ -27,7 +27,7 @@ const Projects = () => {
       description:
         'MoodVibe analyzes your mood and suggest music which best suits you',
       image:
-        'https://postimg.cc/kD9VPv51',
+        'https://i.postimg.cc/Df41sC3T/Gemini-Generated-Image-42l7fu42l7fu42l7.png',
       technologies: ['Node Js', 'Express', 'NeonDb', 'React'],
       demoUrl: 'https://www.jotform.com/app/253054668860464',
       githubUrl: 'https://github.com/purushottamk3112/moodv',
