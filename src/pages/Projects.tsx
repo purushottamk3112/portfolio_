@@ -23,15 +23,15 @@ const Projects = () => {
     },
     {
       id: 2,
-      title: 'Stock Market Predictor',
+      title: 'MoodVibe',
       description:
-        'Machine learning model that analyzes historical data to predict stock market trends with interactive visualization.',
+        'MoodVibe analyzes your mood and suggest music which best suits you',
       image:
-        'https://images.pexels.com/photos/6801648/pexels-photo-6801648.jpeg',
-      technologies: ['Python', 'Scikit-learn', 'Pandas', 'React'],
-      demoUrl: 'https://stock-predictor-demo',
-      githubUrl: 'https://github.com/demo/stock-predictor',
-      category: 'Machine Learning',
+        'https://postimg.cc/kD9VPv51',
+      technologies: ['Node Js', 'Express', 'NeonDb', 'React'],
+      demoUrl: 'https://www.jotform.com/app/253054668860464',
+      githubUrl: 'https://github.com/purushottamk3112/moodv',
+      category: 'SaaS',
     },
     {
       id: 3,
